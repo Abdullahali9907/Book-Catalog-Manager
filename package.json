@@ -1,0 +1,20 @@
+{
+  "name": "book-notes-tracker",
+  "version": "1.0.0",
+  "description": "A personal website to keep track of books I’ve read, inspired by Derek Sivers.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "body-parser": "^2.2.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
+  }
+}

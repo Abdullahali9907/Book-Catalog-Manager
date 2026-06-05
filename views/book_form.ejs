@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+<body>
+  <div class="container">
+    <h1><%= book ? 'Edit Book' : 'Add a New Book' %></h1>
+    <form method="POST">
+      <input type="text" name="title" placeholder="Title" value="<%= book?.title || '' %>" required>
+      <input type="text" name="author" placeholder="Author" value="<%= book?.author || '' %>">
+      <input type="number" name="rating" placeholder="Rating (1-10)" value="<%= book?.rating || '' %>" required>
+      <input type="date" name="date_read" value="<%= book?.date_read?.toISOString().split('T')[0] || '' %>">
+      <textarea name="notes" placeholder="Your notes..."><%= book?.notes || '' %></textarea>
+      <button class="btn" type="submit">💾 Save</button>
+    </form>
+  </div>
+<%- include("partials/footer.ejs") %>
